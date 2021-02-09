@@ -1,1 +1,1 @@
-### [Задание 12.10](https://nmvil.github.io/module11/index.html)
+### [Задание 12.10](https://nmvil.github.io/module11/)
