@@ -84,13 +84,13 @@ const getRandomInt = (min, max) => {
 const shuffleFruits = () => {
   let result = [];
   i = 0;
-  let temp = fruits;
+  // копируем в temp объект, а не только ссылку
+  let temp =  JSON.parse(JSON.stringify(fruits));
 
   while (temp.length > 0) {
     random = getRandomInt(0, temp.length - 1);
     result.push(temp.splice(random, 1)[0]);
   }
-
   if (fruits == result) {
     alert("Ничего не поменялось");
   } else {
